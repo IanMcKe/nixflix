@@ -15,8 +15,8 @@ nixflix.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
-  $stateProvider.state('home', {
-    url: "/home",
+  $stateProvider.state('main', {
+    url: "/main",
     views: {
       'header': {
         templateUrl: "partials/header.html",
@@ -24,9 +24,9 @@ nixflix.config(function($stateProvider, $urlRouterProvider) {
         controllerAs: "header"
       },
       'body': {
-        templateUrl: "partials/home.html",
+        templateUrl: "partials/main.html",
         controller: "PostsCtrl",
-        controllerAs: "body"
+        controllerAs: "posts"
       }
     }
   });

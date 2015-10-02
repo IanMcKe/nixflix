@@ -26,7 +26,7 @@ nixflix.config(function($stateProvider, $urlRouterProvider) {
       'body': {
         templateUrl: "partials/main.html",
         controller: "PostsCtrl",
-        controllerAs: "posts"
+        controllerAs: "vm"
       }
     }
   });

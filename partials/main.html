@@ -1,3 +1,14 @@
 <section>
-  <h1>test</h1>
+  <div id="titles">
+    <ul>
+      <li ng-repeat="item in posts">{{item.postName}}</li>
+    </ul>
+  </div>
+  <div id="add-post">
+    <form ng-submit="PostsFactory.addPost()" role="form">
+      <input ng-model="PostsFactory.postTitle" type="text" placeholder="Enter the title for the review here" required>
+      <input ng-model="PostsFactory.postText" type="text" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </section>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="nixflix">
+  <head>
+    <meta charset="utf-8">
+    <title>NixFlix</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/HeadersController.js"></script>
+    <script src="controllers/PostsController.js"></script>
+    <script src="directives/MyDirectives.js"></script>
+    <script src="services/PostsFactory.js"></script>
+    <script src="services/UtilitiesFactory.js"></script>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body>
+    <div ui-view="header"></div>
+    <div ui-view="body"></div>
+  </body>
+</html>

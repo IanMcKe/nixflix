@@ -1,0 +1,35 @@
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+@import "refills/refills";
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  @include outer-container;
+
+  div#titles {
+    @include span-columns(4);
+  }
+
+  div#posts {
+    @include span-columns(8);
+  }
+}
+
+h1#header {
+  padding-top: .3em;
+  margin-bottom : .2em;
+  font-size: 2.2em;
+}
+
+h3#header {
+  margin-left: .4em;
+  color: $medium-gray
+}
+
+hr {
+
+}

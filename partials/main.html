@@ -1,13 +1,13 @@
 <section>
   <div id="titles">
     <ul>
-      <li ng-repeat="item in posts">{{item.postName}}</li>
+      <li ng-repeat="item in main.posts">{{item.postTitle}}</li>
     </ul>
   </div>
   <div id="add-post">
-    <form ng-submit="PostsFactory.addPost()" role="form">
-      <input ng-model="PostsFactory.postTitle" type="text" placeholder="Enter the title for the review here" required>
-      <input ng-model="PostsFactory.postText" type="text" required>
+    <form ng-submit="main.PostsFactory.addPost()" role="form">
+      <input ng-model="main.PostsFactory.postTitle" type="text" placeholder="Enter the title for the review here" required>
+      <input ng-model="main.PostsFactory.postText" type="text" required>
       <button type="submit">Submit</button>
     </form>
   </div>

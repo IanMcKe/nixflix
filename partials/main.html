@@ -1,10 +1,11 @@
 <section>
   <div id="titles">
     <ul>
-      <li ng-repeat="item in main.posts">{{item.postTitle}}</li>
+      <li ng-repeat="item in main.posts"><a href="" ui-sref="main.post({ postId: item.id })">{{item.postTitle}}</a></li>
     </ul>
   </div>
-  <div id="add-post">
+  <div id="flix">
+    <div ui-view></div>
     <form ng-submit="main.PostsFactory.addPost()" role="form">
       <input ng-model="main.PostsFactory.postTitle" type="text" placeholder="Enter the title for the review here" required>
       <input ng-model="main.PostsFactory.postText" type="text" required>

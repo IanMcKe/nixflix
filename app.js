@@ -30,4 +30,11 @@ nixflix.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
+
+  $stateProvider.state('main.post', {
+    url: "/:postId",
+    templateUrl: "partials/main.post.html",
+    controller: "ContentCtrl",
+    controllerAs: "child"
+  });
 });

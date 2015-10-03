@@ -45,3 +45,13 @@ h1#welcome {
   font-size: 3em;
   margin-bottom: 0.2em;
 }
+
+div#titles {
+  @include span-columns(4);
+  @include pad();
+}
+
+div#flix {
+  @include span-columns(8);
+  @include pad();
+}

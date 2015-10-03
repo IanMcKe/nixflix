@@ -6,10 +6,13 @@
   </div>
   <div id="flix">
     <div ui-view></div>
-    <form ng-submit="main.PostsFactory.addPost()" role="form">
-      <input ng-model="main.PostsFactory.postTitle" type="text" placeholder="Enter the title for the review here" required>
-      <input ng-model="main.PostsFactory.postText" type="text" required>
-      <button type="submit">Submit</button>
-    </form>
+    <div id="add-review">
+      <h2 class="review"></h2>
+      <form ng-submit="main.PostsFactory.addPost()" role="form">
+        <input ng-model="main.PostsFactory.postTitle" type="text" placeholder="Enter the title for the review here" required>
+        <input ng-model="main.PostsFactory.postText" type="text" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>

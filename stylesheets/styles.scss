@@ -1,7 +1,7 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import "refills/refills";
+// @import "refills/refills";
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -9,19 +9,6 @@ body {
 
 section {
   @include outer-container;
-
-  div#titles {
-    @include span-columns(3);
-  }
-
-  div#posts {
-    @include span-columns(9);
-  }
-
-  div#add-review {
-    @include span-columns(9);
-    @include shift(1)
-  }
 }
 
 section#welcome {
@@ -51,6 +38,11 @@ h1#welcome {
   margin-bottom: 0.2em;
 }
 
+h1.review {
+  font-size: 1.5em;
+  text-align: center;
+}
+
 div#titles {
   @include span-columns(4);
   @include pad();
@@ -59,6 +51,12 @@ div#titles {
 div#flix {
   @include span-columns(8);
   @include pad();
+}
+
+div#add-review {
+  @include span-columns(9);
+  @include shift(2);
+  padding-top: 2%;
 }
 
 a {
